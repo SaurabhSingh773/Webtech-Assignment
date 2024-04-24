@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            font-family: "Comic Sans MS";
+            color: #f50808;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: url('cafe.jpg'); /* Use the same background image */
+            background-size: cover;
+            background-position:top;
+            
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+           
+            border-radius: 10px;
+        }
+
+        header h1:hover {
+            color: #17d8db;
+        }
+
+        header:hover {
+            color: #17d8db;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            
+            border-radius: 10px;
+        }
+
+        nav ul li {
+            float: left;
+            font-family: "Comic Sans MS";
+        }
+
+        nav ul li a {
+            display: inline-block;
+            color: #e12413;
+            text-align: center;
+            padding: 14px 10px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform .2s;
+            font-size: 20px;
+        }
+
+        nav ul li a:hover {
+            color: #17d8db;
+            background-color: #111;
+            border-radius: 8px;
+            transform: scale(0.8);
+        }
+
+        .center2 {
+            background-image: url('cafe.jpg'); /* Use the same background image */
+            background-size:cover;
+            background-position:center;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+            height: 570px;
+        }
+
+        .center2 h2 {
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 1.5;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            transition: color 0.3s; /* Adding transition effect for smooth color change */
+        }
+
+        .center2 h2:hover {
+            color: red; /* Change text color to red on hover */
+        }
+
+        li a {
+            display: inline-block;
+            color: rgb(255, 255, 255);
+            text-align: right;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: transform .2s;
+        }
+
+        li a:hover {
+            background-color: rgb(44, 91, 230);
+            transform: scale(1.5);
+        }
+
+        footer.center {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            position:fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>CafeStore</h1>
+    <nav class="center">
+        <ul>
+            <li><a href="index">Home</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="features">Features</a></li>
+            <li><a href="login">Login</a></li>
+            <li><a href="signup">Signup</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="center2">
+    <!-- Adding anchor tag for redirection -->
+    <a href="menu" style="text-decoration: none;">
+        <h2 >At our cafe, every cup tells a story. From the first aromatic sip to the last lingering taste, let us be part of your daily narrative.</h2>
+    </a>
+</section>
+<!-- Other sections and content -->
+<footer class="center">
+    <p>&copy; 2024 CafeStore. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="abnormal.png">
+    <style>
+        /* Your additional CSS styles go here */
+        body {
+            
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            background-image: url(cafe.jpg);
+        }
+
+        header {
+            background-color: #333;
+            font-family: "Comic Sans MS";
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            display: flex;
+            flex-direction: column;
+            width: 300px; /* Adjusted width */
+            height: 250px; /* Adjusted height */
+            background-color: #eabb21;
+            background-image:url(caf.jpg);
+            background-size: cover; /* Ensures the background image covers the entire box */
+            border-radius: 5px;
+            box-shadow: 0 0 50px rgba(0, 29, 247, 0.4);
+            padding: 20px;
+            margin: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px); /* Lift up on hover */
+        }
+
+        .feature h3 {
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .feature p {
+            color: #666;
+            text-align: center;
+        }
+        footer.center {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Our Features</h2>
+</header>
+
+<div class="container">
+    <!-- Feature 1: Virtual Menu -->
+    <div class="feature" onclick="redirectToMenu()">
+        <h2>Virtual Menu</h2>
+        <p style="color: rgb(232, 9, 9);">Explore our offerings with ease through our interactive virtual menu. Discover a wide range of delicious dishes and beverages with high-quality images, detailed descriptions, and recommended pairings.</p>
+    </div>
+
+    <!-- Feature 2: Customizable Orders -->
+    <div class="feature" onclick="redirectToMenu()">
+        <h2>Customizable Orders</h2>
+        <p style="color: rgb(232, 9, 9);">Create your perfect meal by customizing your order according to your preferences. Choose from a variety of ingredients, toppings, spice levels, and more. See your order come to life as you make your selections!</p>
+    </div>
+
+    <!-- Feature 3: Table Reservation System -->
+    <div class="feature" onclick="redirectToMenu()">
+        <h2>Table Reservation System</h2>
+        <p style="color: rgb(232, 9, 9);">Plan your visit ahead of time with our convenient table reservation system. Select your desired date, time, and number of guests, and secure your spot at our cafe. Enjoy a hassle-free dining experience with guaranteed seating!</p>
+    </div>
+</div>
+
+<script>
+function redirectToMenu() {
+    window.location.href = "menu.html";
+}
+</script>
+<footer class="center">
+    <p>&copy; 2024 CafeStore. All rights reserved.</p>
+</footer>
+
+<!-- Other sections and content -->
+
+<script src="script.js"></script>
+</body>
+</html>

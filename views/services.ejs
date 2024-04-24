@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="abnormal.png">
+    <style>
+        /* Your additional CSS styles go here */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            background-image: url(cafe.jpg);
+            background-size: cover;
+        }
+
+        header {
+            background-color: #333;
+            font-family: "Comic Sans MS";
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            display: flex;
+            flex-direction: column;
+            font-family: "Comic Sans MS";
+            width: 300px; /* Adjusted width */
+            height: 250px; /* Adjusted height */
+            background-color: #eabb21;
+            background-image:url(caf.jpg);
+            background-size: cover; /* Ensures the background image covers the entire box */
+            border-radius: 5px;
+            box-shadow: 0 0 50px rgba(0, 29, 247, 0.4);
+            padding: 20px;
+            margin: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .service:hover {
+            transform: translateY(-5px); /* Lift up on hover */
+        }
+
+        .service h3 {
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .service p {
+            color: #666;
+            text-align: center;
+        }
+        footer.center {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Our Services</h2>
+</header>
+<div class="container">
+    <!-- Home Delivery Card -->
+    <div class="service" onclick="redirectToMenu()">
+        <h3>Home Delivery</h3>
+        <p style="color: rgb(232, 9, 9);">Enjoy our delicious meals in the comfort of your home. We deliver fresh and hot meals right to your doorstep.</p>
+    </div>
+
+    <!-- Take Away Card -->
+    <div class="service" onclick="redirectToMenu()">
+        <h3>Take Away</h3>
+        <p style="color: red;">Order your favorite dishes to-go. Swing by our restaurant and pick up your order conveniently.</p>
+    </div>
+
+    <!-- Dining Card -->
+    <div class="service" onclick="redirectToMenu()">
+        <h3>Dining</h3>
+        <p style="color: red;">Experience the pleasure of dining with us. Visit our restaurant and indulge in a delightful culinary journey.</p>
+    </div>
+</div>
+
+<script>
+function redirectToMenu() {
+    window.location.href = "menu.html";
+}
+</script>
+<footer class="center">
+    <p>&copy; 2024 CafeStore. All rights reserved.</p>
+</footer>
+
+<!-- Other sections and content -->
+
+<script src="script.js"></script>
+</body>
+</html>

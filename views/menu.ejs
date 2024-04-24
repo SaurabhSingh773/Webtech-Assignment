@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Store Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            background-image: url(cafe.jpg);
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 300px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .card p {
+            margin-top: 5px;
+            color: #666;
+        }
+
+        .card .price {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="espresso.jpg" alt="Espresso">
+            <div class="card-content">
+                <h3>Espresso</h3>
+                <p>A single shot of espresso.</p>
+                <p class="price">Price: ₹50</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="cappuccino.jpg" alt="Cappuccino">
+            <div class="card-content">
+                <h3>Cappuccino</h3>
+                <p>Espresso with steamed milk and a layer of frothed milk.</p>
+                <p class="price">Price: ₹100</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="americano.jpg" alt="Americano">
+            <div class="card-content">
+                <h3>American Coffee</h3>
+                <p>Black coffee served with hot water.</p>
+                <p class="price">Price: ₹80</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="latte.jpg" alt="Latte">
+            <div class="card-content">
+                <h3>Latte</h3>
+                <p>Espresso with steamed milk and a small amount of frothed milk.</p>
+                <p class="price">Price: ₹120</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="mocha.jpg" alt="Mocha">
+            <div class="card-content">
+                <h3>Mocha</h3>
+                <p>Espresso with steamed milk, chocolate syrup, and topped with whipped cream.</p>
+                <p class="price">Price: ₹150</p>
+            </div>
+        </div>
+
+        <!-- Adding Pastries -->
+        <div class="card">
+            <img src="croissant.jpg" alt="Croissant">
+            <div class="card-content">
+                <h3>Croissant</h3>
+                <p>Flaky pastry with a buttery texture.</p>
+                <p class="price">Price: ₹70</p>
+            </div>
+        </div>
+
+        <!-- Adding Shakes -->
+        <div class="card">
+            <img src="chocolate_shake.jpg" alt="Chocolate Shake">
+            <div class="card-content">
+                <h3>Chocolate Shake</h3>
+                <p>Rich and creamy chocolate shake.</p>
+                <p class="price">Price: ₹120</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="vanilla_shake.jpg" alt="Vanilla Shake">
+            <div class="card-content">
+                <h3>Vanilla Shake</h3>
+                <p>Smooth and velvety vanilla shake.</p>
+                <p class="price">Price: ₹110</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

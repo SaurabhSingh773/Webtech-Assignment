@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="styles.css"> <!-- Link your CSS file here -->
+<style>
+    /* Basic styles for login page */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        background-image: url(cafe.jpg);
+        margin: 0;
+        padding: 0;
+    }
+
+    .login-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        width: 300px;
+        text-align: center;
+        background-image: url('coffee.jpg'); /* Background image */
+        background-size: cover; /* Cover the entire box */
+    }
+
+    .login-form h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+    }
+
+    .input-group label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        color: #555;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s;
+    }
+
+    .input-group input:focus {
+        outline: none;
+        border-color: #666;
+    }
+
+    .input-group input:hover {
+        border-color: #999;
+    }
+
+    .login-form button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .login-form button:hover {
+        background-color: #48c32d;
+    }
+
+    /* Hover effect for the login box */
+    .login-container:hover {
+        box-shadow: 0px 0px 20px rgba(30, 8, 229, 0.2);
+        
+    }
+</style>
+</head>
+<body>
+
+<div class="login-container">
+    <form class="login-form" action="#" method="POST" onsubmit="return validateForm()">
+        <h2>Login</h2>
+        <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+
+
+</body>
+</html>
